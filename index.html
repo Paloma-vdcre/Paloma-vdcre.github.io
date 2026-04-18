@@ -3,22 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valdecasas</title>
+  <title>Valdecasas Real Estate</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
+      min-height: 100vh;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      font-family: Georgia, serif;
     }
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      max-width: 500px;
+      width: 80%;
+      height: auto;
+      display: block;
+    }
+    .linkedin {
+      margin-top: 32px;
+    }
+    .linkedin a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .linkedin svg {
+      width: 36px;
+      height: 36px;
+      fill: #0A66C2;
+      transition: fill 0.2s;
+    }
+    .linkedin svg:hover {
+      fill: #004182;
+    }
+    .frase {
+      margin-top: 28px;
+      max-width: 520px;
+      text-align: center;
+      font-size: 15px;
+      color: #1e3a3a;
+      line-height: 1.8;
+      letter-spacing: 0.02em;
     }
   </style>
 </head>
 <body>
-  <img src="VALDECASAS_marca_negativo.jpg" alt="Valdecasas">
+
+  <img src="VALDECASAS_marca_negativo.jpg" alt="Valdecasas Real Estate">
+
+  <div class="linkedin">
+    <a href="https://www.linkedin.com/company/valdecasas-real-estate/?viewAsMember=true" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.987V9h3.102v1.561h.046c.431-.815 1.484-1.674 3.054-1.674 3.265 0 3.868 2.149 3.868 4.945v6.62zM5.337 7.433a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zm1.554 13.019H3.783V9h3.108v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+      </svg>
+    </a>
+  </div>
+
+  <p class="frase">El inmobiliario es economía real. Y la economía real exige independencia, rigor y confianza a largo plazo.</p>
+
 </body>
 </html>
